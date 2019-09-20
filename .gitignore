@@ -1,0 +1,13 @@
+CSTest/CSTest/bin
+CSTest/CSTest/obj
+CSTest/CSTest/Properties
+CSTest/.vs/
+CSTest/CSTest/*.user
+CppTest/.vs/
+CppTest/x64/
+CppTest/CppTest/Debug/
+CppTest/CppTest/Release/
+CppTest/CppTest/x64/
+CppTest/CppTest/*.filters
+CppTest/CppTest/*.user
+
