@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CRC7.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="TeaEncrypt.cpp" />
   </ItemGroup>

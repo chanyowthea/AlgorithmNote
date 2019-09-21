@@ -7,6 +7,23 @@ namespace GCommon
 {
     static class UDPChecksum
     {
+        public static void Test()
+        {
+            System.IO.MemoryStream m = new System.IO.MemoryStream();
+            var b = new System.IO.BinaryWriter(m);
+            b.Write((byte)1);
+            b.Write((byte)2);
+            var buffs = m.GetBuffer();
+            var index = m.Position;
+            byte[] bs = new byte[2];
+            for (int i = 0; i < bs.Length; i++)
+            {
+                bs[i] = buffs[i];
+            }
+            var crc7 = UDPChecksum.CRC7(0, bs);
+            Console.WriteLine(crc7);
+        }
+
         private static byte[] crc7tab = new byte[]
         {
             0,

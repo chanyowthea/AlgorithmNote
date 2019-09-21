@@ -14,6 +14,7 @@ void encrypt(uint32_t* v, uint32_t* k) {
 	}                                              /* end cycle */
 	v[0] = v0; v[1] = v1;
 }
+
 //解密函数
 void decrypt(uint32_t* v, uint32_t* k) {
 	uint32_t v0 = v[0], v1 = v[1], sum = 0xC6EF3720, i;  /* set up */
